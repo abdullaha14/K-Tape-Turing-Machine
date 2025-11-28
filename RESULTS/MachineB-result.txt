@@ -1,0 +1,129 @@
+1: q0,0,*,q_copy,0,*,R,R
+2: q0,1,*,q_copy,1,*,R,R
+3: q0,_,_,q_check,_,_,S,S
+4: q_copy,0,*,q_copy,0,*,R,R
+5: q_copy,1,*,q_copy,1,*,R,R
+6: q_copy,_,*,q_check,_,_,S,S
+7: q_check,0,0,q_check,0,0,R,R
+8: q_check,1,1,q_check,1,1,R,R
+9: q_check,_,_,q_accept,_,_,S,S
+10: q_check,0,1,q_reject,0,1,S,S
+11: q_check,1,0,q_reject,1,0,S,S
+Loaded machine: MachineB
+Tape file: TESTFILES/MachineB-tape.txt
+
+Problem 1
+Tape 1: 0
+Tape 2: 
+0,1,0,0,q0,0,_,q_copy,0,_,R,R
+1,6,1,1,q_copy,_,_,q_check,_,_,S,S
+2,9,1,1,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 3
+Tape 1: 0
+Tape 2: 
+
+Problem 2
+Tape 1: 1
+Tape 2: 
+0,2,0,0,q0,1,_,q_copy,1,_,R,R
+1,6,1,1,q_copy,_,_,q_check,_,_,S,S
+2,9,1,1,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 3
+Tape 1: 1
+Tape 2: 
+
+Problem 3
+Tape 1: 01
+Tape 2: 
+0,1,0,0,q0,0,_,q_copy,0,_,R,R
+1,5,1,1,q_copy,1,_,q_copy,1,_,R,R
+2,6,2,2,q_copy,_,_,q_check,_,_,S,S
+3,9,2,2,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 4
+Tape 1: 01
+Tape 2: 
+
+Problem 4
+Tape 1: 10
+Tape 2: 
+0,2,0,0,q0,1,_,q_copy,1,_,R,R
+1,4,1,1,q_copy,0,_,q_copy,0,_,R,R
+2,6,2,2,q_copy,_,_,q_check,_,_,S,S
+3,9,2,2,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 4
+Tape 1: 10
+Tape 2: 
+
+Problem 5
+Tape 1: 0011
+Tape 2: 
+0,1,0,0,q0,0,_,q_copy,0,_,R,R
+1,4,1,1,q_copy,0,_,q_copy,0,_,R,R
+2,5,2,2,q_copy,1,_,q_copy,1,_,R,R
+3,5,3,3,q_copy,1,_,q_copy,1,_,R,R
+4,6,4,4,q_copy,_,_,q_check,_,_,S,S
+5,9,4,4,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 6
+Tape 1: 0011
+Tape 2: 
+
+Problem 6
+Tape 1: 1100
+Tape 2: 
+0,2,0,0,q0,1,_,q_copy,1,_,R,R
+1,5,1,1,q_copy,1,_,q_copy,1,_,R,R
+2,4,2,2,q_copy,0,_,q_copy,0,_,R,R
+3,4,3,3,q_copy,0,_,q_copy,0,_,R,R
+4,6,4,4,q_copy,_,_,q_check,_,_,S,S
+5,9,4,4,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 6
+Tape 1: 1100
+Tape 2: 
+
+Problem 7
+Tape 1: 0101
+Tape 2: 
+0,1,0,0,q0,0,_,q_copy,0,_,R,R
+1,5,1,1,q_copy,1,_,q_copy,1,_,R,R
+2,4,2,2,q_copy,0,_,q_copy,0,_,R,R
+3,5,3,3,q_copy,1,_,q_copy,1,_,R,R
+4,6,4,4,q_copy,_,_,q_check,_,_,S,S
+5,9,4,4,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 6
+Tape 1: 0101
+Tape 2: 
+
+Problem 8
+Tape 1: 1111
+Tape 2: 
+0,2,0,0,q0,1,_,q_copy,1,_,R,R
+1,5,1,1,q_copy,1,_,q_copy,1,_,R,R
+2,5,2,2,q_copy,1,_,q_copy,1,_,R,R
+3,5,3,3,q_copy,1,_,q_copy,1,_,R,R
+4,6,4,4,q_copy,_,_,q_check,_,_,S,S
+5,9,4,4,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 6
+Tape 1: 1111
+Tape 2: 
+
+Problem 9
+Tape 1: 0000
+Tape 2: 
+0,1,0,0,q0,0,_,q_copy,0,_,R,R
+1,4,1,1,q_copy,0,_,q_copy,0,_,R,R
+2,4,2,2,q_copy,0,_,q_copy,0,_,R,R
+3,4,3,3,q_copy,0,_,q_copy,0,_,R,R
+4,6,4,4,q_copy,_,_,q_check,_,_,S,S
+5,9,4,4,q_check,_,_,q_accept,_,_,S,S
+Accepted
+Steps: 6
+Tape 1: 0000
+Tape 2: 

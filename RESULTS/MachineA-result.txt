@@ -1,0 +1,98 @@
+1: q0,0,q1,X,R
+2: q0,Y,q0,Y,R
+3: q0,_,q_accept,_,S
+4: q1,1,q2,Y,L
+5: q1,_,q_reject,_,S
+6: q1,0,q1,0,R
+7: q2,X,q0,X,R
+8: q2,0,q2,0,L
+9: q2,Y,q2,Y,L
+10: q2,_,q0,_,R
+Loaded machine: MachineA
+Tape file: TESTFILES/MachineA-tape.txt
+
+Problem 1
+Tape 1: 0
+0,1,0,q0,0,q1,X,R
+1,5,1,q1,_,q_reject,_,S
+Rejected
+Steps: 2
+Tape 1: X
+
+Problem 2
+Tape 1: 1
+Error: no transition defined
+Error
+Steps: 0
+Tape 1: 1
+
+Problem 3
+Tape 1: 01
+0,1,0,q0,0,q1,X,R
+1,4,1,q1,1,q2,Y,L
+2,7,0,q2,X,q0,X,R
+3,2,1,q0,Y,q0,Y,R
+4,3,2,q0,_,q_accept,_,S
+Accepted
+Steps: 5
+Tape 1: XY
+
+Problem 4
+Tape 1: 10
+Error: no transition defined
+Error
+Steps: 0
+Tape 1: 10
+
+Problem 5
+Tape 1: 0011
+0,1,0,q0,0,q1,X,R
+1,6,1,q1,0,q1,0,R
+2,4,2,q1,1,q2,Y,L
+3,8,1,q2,0,q2,0,L
+4,7,0,q2,X,q0,X,R
+5,1,1,q0,0,q1,X,R
+Error: no transition defined
+Error
+Steps: 6
+Tape 1: XXY1
+
+Problem 6
+Tape 1: 1100
+Error: no transition defined
+Error
+Steps: 0
+Tape 1: 1100
+
+Problem 7
+Tape 1: 0101
+0,1,0,q0,0,q1,X,R
+1,4,1,q1,1,q2,Y,L
+2,7,0,q2,X,q0,X,R
+3,2,1,q0,Y,q0,Y,R
+4,1,2,q0,0,q1,X,R
+5,4,3,q1,1,q2,Y,L
+6,7,2,q2,X,q0,X,R
+7,2,3,q0,Y,q0,Y,R
+8,3,4,q0,_,q_accept,_,S
+Accepted
+Steps: 9
+Tape 1: XYXY
+
+Problem 8
+Tape 1: 1111
+Error: no transition defined
+Error
+Steps: 0
+Tape 1: 1111
+
+Problem 9
+Tape 1: 0000
+0,1,0,q0,0,q1,X,R
+1,6,1,q1,0,q1,0,R
+2,6,2,q1,0,q1,0,R
+3,6,3,q1,0,q1,0,R
+4,5,4,q1,_,q_reject,_,S
+Rejected
+Steps: 5
+Tape 1: X000
